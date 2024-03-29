@@ -1,6 +1,12 @@
 {
-    "Produtos": [
-        {"Id" : "1" , "Nome" : "Caneta Azul"},
-        {"Id" : "2" , "Nome" : "Azul Caneta"}
+    "cars": [
+        {
+            "make": "Honda",
+            "model": "Civic"
+        },
+        {
+            "make": "Ford",
+            "model": "Mustang"
+        }
     ]
 }
