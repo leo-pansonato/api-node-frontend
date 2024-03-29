@@ -1,2 +1,2 @@
 # api-node-frontend
-API com Node.js para usar no frontend
+Fake API com Node.js para usar no frontend
