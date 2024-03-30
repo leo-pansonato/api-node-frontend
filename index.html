@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="https://www.zarla.com/images/zarla-vip-pet-1x1-2400x2400-20210607-c6f4v94khxjmtg9rhcxx.png?crop=1:1,smart&width=250&dpr=2">
+    <title>Lista Telefonica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="components/userList.js"></script>
+    <link rel="stylesheet" href="components/userList.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+                <a href="index.html" class="active">Home</a> 
+                <a href="#">Curiosidades</a>
+                <a href="#">Sobre</a>
+        </div>
+        <div class="menu">
+            <div class="pefil"></div>
+        </div>
+    </header>
+    <div class="conteudo">
+        <div class="title">
+            <h1>HOME</h1>
+        </div>
+    <div id="user-list"></div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function() {
+        renderUserList();
+    });
+</script>
+</html>
