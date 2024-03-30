@@ -1,14 +1,14 @@
-# API e Front-End
-<h3>Fake API com Node.js para usar no `Front-End`.<h3>
+# API / Front-End
+### `Front-End` usando Fake API (json-server) com Node.js.
 <br>
   
-## Contributions
+## Contribuições
 
-Contributions are welcome! If you find issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+Contribuições são bem-vindas! Se você encontrar problemas ou tiver sugestões de melhorias, sinta-se à vontade para abrir um Issues ou enviar um Pull request.
 
-## Contact
+## Contato
 
-If you have any questions or feedback, feel free to contact at [leopansonato@gmail.com](mailto:leopansonato@gmail.com).
+Se você tiver alguma dúvida ou feedback, sinta-se à vontade para entrar em contato em [leopansonato@gmail.com](mailto:leopansonato@gmail.com).
 
 ## Screenshot
 <div align="center" justify="center"><img width="600px" src="assets/screen-shot.png" alt="screenshot"></div>
