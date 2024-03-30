@@ -1,0 +1,35 @@
+#user-list {
+    list-style: none;
+    padding: 0;
+}
+  
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9,
+                -20px -20px 60px #ffffff;
+    margin: 1em;
+    padding: 1em 1.5em;
+    font-size: 16px;
+    color: #464646;
+    cursor: pointer;
+    .index{
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .name{
+        font-weight: 500;
+    }
+}
+
+.contact:hover{
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+}
+
+.contact p + p{
+    margin-top: 0.5rem;
+}

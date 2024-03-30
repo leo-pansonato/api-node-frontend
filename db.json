@@ -1,12 +1,24 @@
 {
-    "cars": [
+    "users": [
         {
-            "make": "Honda",
-            "model": "Civic"
+            "id": "1",
+            "name": "Leonardo",
+            "phone": "(11) 97524-9537"
         },
         {
-            "make": "Ford",
-            "model": "Mustang"
+            "id": "2",
+            "name": "Leo",
+            "phone": "(11) 97524-9537"
+        },
+        {
+            "id": "3",
+            "name": "Teste",
+            "phone": "(11) 97524-9537"
+        },
+        {
+            "id": "4",
+            "name": "Teste 2",
+            "phone": "(11) 97524-9537"
         }
     ]
 }
