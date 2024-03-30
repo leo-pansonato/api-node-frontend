@@ -7,29 +7,48 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
-    border-radius: 12px;
-    background: #ffffff;
-    box-shadow: 20px 20px 60px #d9d9d9,
-                -20px -20px 60px #ffffff;
-    margin: 1em;
-    padding: 1em 1.5em;
+    gap: 30px;
+    border-radius: 15px;
+    background: #ffffff41;
+    box-shadow: 20px 20px 60px #4747474d,
+                -20px -20px 60px #8f8f8f36;
+    margin: 1em 0em;
+    padding: 1em 2em;
     font-size: 16px;
-    color: #464646;
-    cursor: pointer;
+    color: #ffffff;
+    backdrop-filter: blur(20px);
+
     .index{
         font-size: 25px;
         font-weight: 900;
     }
     .name{
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .info{
+        width: 100%;
+    }
+    .actions i{
+        font-size: 23px;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 12px;
+        text-align: center;
+        transition: 0.1s;
+    }
+    .actions i:hover{
+        background-color: #49494938;
     }
 }
 
-.contact:hover{
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+.contact p + p{
+    margin-top: 0.3rem;
 }
 
-.contact p + p{
-    margin-top: 0.5rem;
+.actions .popover{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1.5em;
 }
