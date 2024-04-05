@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cd64",
+    "Nome": "Leonardo",
+    "Endereco": "Rua dos Bobos N°160",
+    "Casado": false,
+    "Renda": 129000
+  },
+  {
+    "id": "906d",
+    "Nome": "Gabriel",
+    "Endereco": "Rua dos Bobos N°292",
+    "Casado": false,
+    "Renda": 9000
+  },
+  {
+    "id": "694a",
+    "Nome": "Gustavo",
+    "Endereco": "Rua dos Bobos N°10",
+    "Casado": true,
+    "Renda": 1000
+  },
+  {
+    "Nome": "João",
+    "Endereco": "Rua dos Bobos N°666",
+    "Casado": false,
+    "Renda": 1200,
+    "id": "874b"
+  }
+]

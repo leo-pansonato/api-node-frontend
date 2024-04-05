@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "id": "fecb",
+      "Descricao": "Parafuso",
+      "Preco": 40.5,
+      "Quantidade": 69
+    },
+    {
+      "id": "f514",
+      "Descricao": "Porcas",
+      "Preco": 9.5,
+      "Quantidade": 169
+    },
+    {
+      "Descricao": "Fita adesiva",
+      "Preco": 54,
+      "Quantidade": 9,
+      "id": "96bc"
+    },
+    {
+      "id": "c0bd",
+      "Descricao": "Chave de fenda",
+      "Preco": 350,
+      "Quantidade": 2
+    }
+  ],
+  "clients": [
+    {
+      "id": "cd64",
+      "Nome": "Leonardo",
+      "Endereco": "Rua dos Bobos N°160",
+      "Casado": false,
+      "Renda": 129000
+    },
+    {
+      "id": "694a",
+      "Nome": "Gustavo",
+      "Endereco": "Rua dos Bobos N°10",
+      "Casado": true,
+      "Renda": 1000
+    },
+    {
+      "id": "874b",
+      "Nome": "João",
+      "Endereco": "Rua dos Bobos N°666",
+      "Casado": false,
+      "Renda": 1200
+    }
+  ]
+}

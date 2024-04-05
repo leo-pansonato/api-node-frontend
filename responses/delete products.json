@@ -1,0 +1,26 @@
+[
+  {
+    "Descricao": "Parafuso",
+    "Preco": 40.5,
+    "Quantidade": 69,
+    "id": "fecb"
+  },
+  {
+    "id": "f514",
+    "Descricao": "Porcas",
+    "Preco": 9.5,
+    "Quantidade": 169
+  },
+  {
+    "Descricao": "Fita adesiva",
+    "Preco": 54,
+    "Quantidade": 9,
+    "id": "96bc"
+  },
+  {
+    "id": "c0bd",
+    "Descricao": "Chave de fenda",
+    "Preco": 350,
+    "Quantidade": 2
+  }
+]

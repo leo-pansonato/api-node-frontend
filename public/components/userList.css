@@ -3,15 +3,14 @@
     padding: 0;
 }
   
-.contact {
+.client {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
     border-radius: 15px;
     background: #ffffff41;
-    box-shadow: 20px 20px 60px #4747474d,
-                -20px -20px 60px #8f8f8f36;
+    box-shadow: 20px 20px 60px #7a7a7a4d, -20px -20px 60px #c5c5c536;
     margin: 1em 0em;
     padding: 1em 2em;
     font-size: 16px;
@@ -42,7 +41,7 @@
     }
 }
 
-.contact p + p{
+.client p + p{
     margin-top: 0.3rem;
 }
 
