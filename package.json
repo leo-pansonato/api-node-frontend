@@ -1,16 +1,5 @@
 {
-  "name": "api-node-frontend",
-  "version": "1.0.0",
-  "description": "API com Node.js para usar no frontend",
-  "main": "index.js",
-  "scripts": {
-    "start": "json-server db.json --port 3001",
-    "test": "echo \"Test: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Leonardo Capitani Pansonato",
-  "license": "ISC",
   "dependencies": {
-    "json-server": "^1.0.0-alpha.23"
+    "express": "^4.19.2"
   }
 }

@@ -5,7 +5,7 @@ body{
     background-color: #d6d6d6;
     width: 100%;
     min-height: 100vh;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     background-image: url(assets/wallpaper.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,9 +65,22 @@ header .nav {
     display: flex;
     flex-direction: column;
     margin: 3em 0em;
+    i{
+        cursor: pointer;
+        transition: 0.2;
+    }
+}
+
+.title i:hover{
+    background-color: #5757574b;
 }
 
 .conteudo h1{
     text-align: start;
     color: #fff;
+}
+
+i.fa{
+    margin: 0;
+    padding: 0;
 }
