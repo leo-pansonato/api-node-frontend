@@ -34,10 +34,10 @@ function renderClientsList() {
                 html: true,
                 content: `
                 <div class="d-flex flex-column gap-2">
-                  <a class="btn btn-outline-primary px-5 border-0 text-start" id="btn-detalhes" data-uid="${client.id}">Detalhes</a>
-                  <a class="btn btn-outline-primary px-5 border-0" id="btn-editar" data-uid="${client.id}">Editar</a>
+                  <a class="btn btn-outline-primary px-5 border-0 text-start" id="btn-detalhes">Detalhes</a>
+                  <a class="btn btn-outline-primary px-5 border-0" id="btn-editar">Editar</a>
                   <hr class="my-1">
-                  <a class="btn btn-outline-danger px-5 border-0" id="btn-excluir" href="${client.id}">Excluir</a>
+                  <a class="btn btn-outline-danger px-5 border-0" id="btn-excluir">Excluir</a>
                 </div>`
               });
             });
@@ -48,8 +48,10 @@ function renderClientsList() {
 
 //clique do botao excluir
 $(document).on('click', '#btn-excluir', function() {
-    const uid = $(this).href();
+    //pega o id da lista mais perto
+    const uid = $(this).closest('.client').data('uid');
     console.log(uid);
+
     $.ajax({
         url: `http://localhost:3001/clients/${uid}`,
         type: 'DELETE',
