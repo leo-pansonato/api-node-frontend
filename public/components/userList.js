@@ -10,18 +10,18 @@ function renderClientsList() {
             clients.forEach((client, index) => {
 
             const itemList = `
-            <div class="client" data-uid="${client.id}">
+            <div class="client">
               <div class="index">${index + 1}</div>
               <div class="info">
                 <p class="name py-0 my-0">${client.Nome}</p>
                 <div class="d-flex flex-row gap-3">
                   <p class="phone py-0 my-0"><i class="fa-solid fa-location-dot mx-1"></i>${client.Endereco}</p>
-                  <p class="phone py-0 my-0"><i class="fa-thin fa-rings-wedding mx-1"></i>${client.Casado == true ? "Casado" : "Solteiro"}</p>
-                  <p class="phone py-0 my-0"><i class="fa-regular fa-money-bill mx-1"></i>R$${client.Renda}</p>
+                  <p class="phone py-0 my-0"><i class="fa-light fa-rings-wedding mx-1"></i>${client.Casado == true ? "Casado" : "Solteiro"}</p>
+                  <p class="phone py-0 my-0"><i class="fa-light fa-money-bill mx-1"></i>R$${client.Renda}</p>
                 </div>
               </div>
               <div class="actions">
-                <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="left"><i class="fa fa-ellipsis-v"></i></a>
+                <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="left" data-uid="${client.id}"><i class="fa fa-ellipsis-v"></i></a>
               </div>
             </div>
             `;
@@ -48,9 +48,9 @@ function renderClientsList() {
 
 //clique do botao excluir
 $(document).on('click', '#btn-excluir', function() {
-    //pega o id da lista mais perto
-    const uid = $(this).closest('.client').data('uid');
-    console.log(uid);
+
+    const popoverId = $(this).offsetParent().attr('id');
+    var uid = $(`[aria-describedby="${popoverId}"]`).data('uid');
 
     $.ajax({
         url: `http://localhost:3001/clients/${uid}`,

@@ -41,11 +41,18 @@
       "Renda": 1000
     },
     {
-      "id": "874b",
-      "Nome": "João",
-      "Endereco": "Rua dos Bobos N°666",
+      "id": "f5be",
+      "Nome": "Gabriel",
+      "Endereco": "Rua dos Bobos N°200",
       "Casado": false,
-      "Renda": 1200
+      "Renda": 10000
+    },
+    {
+      "id": "ffa0",
+      "Nome": "João",
+      "Endereco": "Rua dos Bobos N°0",
+      "Casado": false,
+      "Renda": 5000
     }
   ]
 }

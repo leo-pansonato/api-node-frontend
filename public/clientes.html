@@ -22,7 +22,7 @@
     
 </head>
 <body>
-    <header>
+    <header class="py-3 bg-white">
         <div class="nav">
             <a href="/">Home</a> 
             <a href="/clientes" class="active">Clientes</a>
@@ -35,9 +35,67 @@
     <div class="conteudo">
         <div class="title d-flex flex-row align-items-center">
             <h1>Clientes</h1>
-            <i class="fa fa-plus text-white fs-4 p-2 mx-2 rounded-3"></i>
+            <i class="fa fa-plus text-white fs-4 p-2 mx-2 rounded-3" data-bs-toggle="modal" data-bs-target="#addModal"></i>
         </div>
     </div>
+
+    <!-- Modal Add -->
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="addModalLabel">Adicionar novo Cliente</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <form>
+                 <div class="mb-3">
+                     <label for="client-name" class="col-form-label"><i class="fa-light fa-user me-2"></i>Nome:</label>
+                     <input type="text" class="form-control" id="client-name" placeholder="Insira o nome do cliente">
+                 </div>
+                 <div class="mb-3">
+                     <label for="client-address" class="col-form-label"><i class="fa-light fa-location-dot me-2"></i>Endereço:</label>
+                     <input class="form-control" id="client-address" placeholder="Insira o endereço do cliente">
+                 </div>
+                 <div class="mb-3 row g-3">
+                    <div class="col-4">
+                        <label for="client-cpf" class="col-form-label"><i class="fa-light fa-address-card me-2"></i>CPF:</label>
+                        <input class="form-control" id="client-cpf" placeholder="Insira o CPF do cliente">
+                    </div>
+                    <div class="col-4">
+                        <label for="client-income" class="col-form-label"><i class="fa-light fa-money-bill me-2"></i>Renda(R$):</label>
+                        <input class="form-control" id="client-income" placeholder="Insira a renda do cliente">
+                    </div>
+                    <div class="col-4">
+                        <label for="client-marry" class="col-form-label"><i class="fa-light fa-rings-wedding me-2"></i>Casado:</label>
+                        <input class="form-control" id="client-marry" placeholder="Sim / Não">
+                    </div>
+                 </div>
+             </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-success">Adicionar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 mt-4 w-100 border-top bg-white">
+        <div class="col-md-4 d-flex align-items-center ms-5">
+          <a href="/" class="me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <i class="fa-solid fa-shop"></i>
+          </a>
+          <span class="text-muted">© 2024 Lojinha, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
+          <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+    </footer>
 
 <script>
     $(document).ready(function() {
