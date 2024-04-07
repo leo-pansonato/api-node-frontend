@@ -1,6 +1,6 @@
-#user-list {
-    list-style: none;
-    padding: 0;
+#clients-list {
+    max-height: calc(100vh - 230px);
+    overflow-y: auto;
 }
   
 .client {
@@ -10,7 +10,7 @@
     gap: 30px;
     border-radius: 15px;
     background: #ffffff41;
-    box-shadow: 20px 20px 60px #7a7a7a4d, -20px -20px 60px #c5c5c536;
+    /* box-shadow: 20px 20px 60px #7a7a7a4d, -20px -20px 60px #c5c5c536; */
     margin: 1em 0em;
     padding: 1em 2em;
     font-size: 16px;

@@ -10,18 +10,18 @@ function renderClientsList() {
             clients.forEach((client, index) => {
 
             const itemList = `
-            <div class="client" data-uid="${client.id}">
+            <div class="client">
               <div class="index">${index + 1}</div>
               <div class="info">
                 <p class="name py-0 my-0">${client.Nome}</p>
                 <div class="d-flex flex-row gap-3">
                   <p class="phone py-0 my-0"><i class="fa-solid fa-location-dot mx-1"></i>${client.Endereco}</p>
-                  <p class="phone py-0 my-0"><i class="fa-thin fa-rings-wedding mx-1"></i>${client.Casado == true ? "Casado" : "Solteiro"}</p>
-                  <p class="phone py-0 my-0"><i class="fa-regular fa-money-bill mx-1"></i>R$${client.Renda}</p>
+                  <p class="phone py-0 my-0"><i class="fa-light fa-rings-wedding mx-1"></i>${client.Casado == true ? "Casado" : "Solteiro"}</p>
+                  <p class="phone py-0 my-0"><i class="fa-light fa-money-bill mx-1"></i>R$${client.Renda}</p>
                 </div>
               </div>
               <div class="actions">
-                <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="left"><i class="fa fa-ellipsis-v"></i></a>
+                <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="left" data-uid="${client.id}"><i class="fa fa-ellipsis-v"></i></a>
               </div>
             </div>
             `;
@@ -34,10 +34,10 @@ function renderClientsList() {
                 html: true,
                 content: `
                 <div class="d-flex flex-column gap-2">
-                  <a class="btn btn-outline-primary px-5 border-0 text-start" id="btn-detalhes" data-uid="${client.id}">Detalhes</a>
-                  <a class="btn btn-outline-primary px-5 border-0" id="btn-editar" data-uid="${client.id}">Editar</a>
+                  <a class="btn btn-outline-primary px-5 border-0 text-start" id="btn-detalhes">Detalhes</a>
+                  <a class="btn btn-outline-primary px-5 border-0" id="btn-editar">Editar</a>
                   <hr class="my-1">
-                  <a class="btn btn-outline-danger px-5 border-0" id="btn-excluir" href="${client.id}">Excluir</a>
+                  <a class="btn btn-outline-danger px-5 border-0" id="btn-excluir">Excluir</a>
                 </div>`
               });
             });
@@ -48,8 +48,10 @@ function renderClientsList() {
 
 //clique do botao excluir
 $(document).on('click', '#btn-excluir', function() {
-    const uid = $(this).href();
-    console.log(uid);
+
+    const popoverId = $(this).offsetParent().attr('id');
+    var uid = $(`[aria-describedby="${popoverId}"]`).data('uid');
+
     $.ajax({
         url: `http://localhost:3001/clients/${uid}`,
         type: 'DELETE',
