@@ -60,3 +60,69 @@ $(document).on('click', '#btn-excluir', function() {
         }
     });
 });
+
+$(document).on('click', '#btn-add', function() {
+    let isInvalid;
+    
+    let name = $("#client-name").val();
+    if(name == "") {
+      $("#client-name").addClass("error");
+      $('[for="client-name"]').addClass("error");
+      isInvalid = true;
+    }
+    else {$("#client-name").removeClass("error"); $('[for="client-name"]').removeClass("error");}
+    
+
+    let address = $("#client-address").val();
+    if(address == "") {
+      $("#client-address").addClass("error");
+      $('[for="client-address"]').addClass("error");
+      isInvalid = true;
+    } else {$("#client-address").removeClass("error"); $('[for="client-address"]').removeClass("error")}
+
+    let cpf = $("#client-cpf").val();
+    if(cpf == "") {
+      $("#client-cpf").addClass("error");
+      $('[for="client-cpf"]').addClass("error");
+      isInvalid = true;
+    } else {$("#client-cpf").removeClass("error"); $('[for="client-cpf"]').removeClass("error")}
+
+    let income = $("#client-income").val();
+    if(income == "") {
+      $("#client-income").addClass("error");
+      $('[for="client-income"]').addClass("error");
+      isInvalid = true;
+    } else {$("#client-income").removeClass("error"); $('[for="client-income"]').removeClass("error")}
+
+    let marry = $("#client-marry").val();
+    if(marry == "") {
+      $("#client-marry").addClass("error");
+      $('[for="client-marry"]').addClass("error");
+      isInvalid = true;
+    } else {$("#client-marry").removeClass("error"); $('[for="client-marry"]').removeClass("error")}
+    if(isInvalid) return;
+
+    $.ajax({
+        url: 'http://localhost:3001/clients',
+        type: 'POST',
+        contentType: 'application/json',
+        dataType: 'json',
+        data: JSON.stringify({
+            Nome: name,
+            Endereco: address,
+            CPF: cpf,
+            Renda: income,
+            Casado: marry === "true" ? true : false
+        }),
+        success: function() {
+            renderClientsList();
+            $("#client-name").val("");
+            $("#client-address").val("");
+            $("#client-cpf").val("");
+            $("#client-income").val("");
+            $("#client-marry").val("");
+            const modal = bootstrap.Modal.getOrCreateInstance($("#addModal"));
+            modal.hide();
+        }
+    });
+});
