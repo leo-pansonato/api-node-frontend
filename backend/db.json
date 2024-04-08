@@ -41,18 +41,12 @@
       "Renda": 1000
     },
     {
-      "id": "f5be",
-      "Nome": "Gabriel",
-      "Endereco": "Rua dos Bobos N°200",
-      "Casado": false,
-      "Renda": 10000
-    },
-    {
-      "id": "ffa0",
-      "Nome": "João",
-      "Endereco": "Rua dos Bobos N°0",
-      "Casado": false,
-      "Renda": 5000
+      "id": "5c1c",
+      "Nome": "Teste",
+      "Endereco": "Rua teste",
+      "CPF": "11111111111",
+      "Renda": "1500",
+      "Casado": true
     }
   ]
 }

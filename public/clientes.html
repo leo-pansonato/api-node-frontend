@@ -68,14 +68,18 @@
                     </div>
                     <div class="col-4">
                         <label for="client-marry" class="col-form-label"><i class="fa-light fa-rings-wedding me-2"></i>Casado:</label>
-                        <input class="form-control" id="client-marry" placeholder="Sim / Não">
+                        <select name="client-marry" id="client-marry" class="form-select">
+                            <option value="">Selecione...</option>
+                            <option value="true">Sim</option>
+                            <option value="false">Não</option>
+                        </select>
                     </div>
                  </div>
              </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              <button type="button" class="btn btn-success">Adicionar</button>
+              <button type="button" class="btn btn-success" id="btn-add">Adicionar</button>
             </div>
           </div>
         </div>
