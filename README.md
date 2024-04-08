@@ -1,5 +1,5 @@
 # API / Front-End
-### `Front-End` usando Fake API (json-server) com Node.js.
+### `Front-End` usando Fake API (json-server) e Node.js.
 <br>
   
 ## Contribuições
