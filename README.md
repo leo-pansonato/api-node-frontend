@@ -11,4 +11,4 @@ Contribuições são bem-vindas! Se você encontrar problemas ou tiver sugestõe
 Se você tiver alguma dúvida ou feedback, sinta-se à vontade para entrar em contato em [leopansonato@gmail.com](mailto:leopansonato@gmail.com).
 
 ## Screenshot
-<div align="center" justify="center"><img width="600px" src="public/assets/screen-shot.png" alt="screenshot"></div>
+<div align="center" justify="center"><img width="600px" src="public/assets/screen-shot 2.png" alt="screenshot"></div>
